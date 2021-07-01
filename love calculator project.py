@@ -20,8 +20,8 @@ def check(s1,s2):
 def sendit(message):
     s=SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login("roja.senthil06@gmail.com", "ROJAsenthil@123")
-    s.sendmail("roja.senthil06@gmail.com", ["vivekkancharla31416@gmail.com",'harsha8474@gmail.com'], message)
+    s.login("yourmail@gmail.com", "password")
+    s.sendmail("yourmail@gmail.com",['list of mail ids'], message)
     s.quit()
 w=Tk()
 w.title("CALCULATE YOUR LOVE")
